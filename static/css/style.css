@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.dashboard-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.datetime {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.widgets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.widget {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.widget h2 {
+    color: #333;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 5px;
+}
+
+/* Weather Widget Styles */
+.weather-icon {
+    font-size: 3rem;
+    margin: 10px 0;
+}
+
+.weather-details {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.weather-detail {
+    text-align: center;
+}
+
+.weather-detail span {
+    display: block;
+    font-size: 0.9rem;
+    color: #666;  /* Fixed: added # */
+}
+
+.weather-detail .value {  /* Fixed: added . before value */
+    font-weight: bold;
+    color: #333;  /* Fixed: added # */
+}
+
+/* News Widget Styles */
+.news-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;  /* Fixed: added # */
+}
+
+/* News Widget Styles */
+.news-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.news-item:last-child {
+    border-bottom: none;
+}
+
+.news-title {
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.news-title:hover {
+    color: #667eea;
+}
+
+/* Quote Widget Styles */
+.quote-content {
+    font-style: italic;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.quote-text {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.quote-author {
+    color: #667eea;
+    font-weight: bold;
+}
+
+/* Tasks Widget Styles */
+.task-input {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+#task-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #5a6fd8;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.task-item:last-child {
+    border-bottom: none;
+}
+
+.task-text {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.task-completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.delete-btn {
+    background: #ff4757;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+}
+
+.loading {
+    text-align: center;
+    color: #999;
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .widgets-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .dashboard-header h1 {
+        font-size: 2rem;
+    }
+}

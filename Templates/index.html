@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="dashboard">
+        <header class="dashboard-header">
+            <h1>My Personal Dashboard</h1>
+            <div class="datetime" id="datetime">Loading...</div>
+        </header>
+
+        <main class="widgets-grid">
+            <!-- Weather Widget -->
+            <div class="widget weather-widget">
+                <h2>Weather</h2>
+                <div class="weather-content" id="weather-content">
+                    <div class="loading">Loading weather...</div>
+                </div>
+            </div>
+
+            <!-- News Widget -->
+            <div class="widget news-widget">
+                <h2>Top News</h2>
+                <div class="news-content" id="news-content">
+                    <div class="loading">Loading news...</div>
+                </div>
+            </div>
+
+            <!-- Quote Widget -->
+            <div class="widget quote-widget">
+                <h2>Daily Quote</h2>
+                <div class="quote-content" id="quote-content">
+                    <div class="loading">Loading quote...</div>
+                </div>
+            </div>
+
+            <!-- Tasks Widget -->
+            <div class="widget tasks-widget">
+                <h2>My Tasks</h2>
+                <div class="task-input">
+                    <input type="text" id="task-input" placeholder="Add a new task...">
+                    <button onclick="addTask()">Add</button>
+                </div>
+                <div class="tasks-list" id="tasks-list">
+                    <!-- Tasks will be loaded here -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
