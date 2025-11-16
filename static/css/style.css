@@ -73,18 +73,12 @@ body {
 .weather-detail span {
     display: block;
     font-size: 0.9rem;
-    color: #666;  /* Fixed: added # */
+    color: #666;
 }
 
-.weather-detail .value {  /* Fixed: added . before value */
+.weather-detail .value {
     font-weight: bold;
-    color: #333;  /* Fixed: added # */
-}
-
-/* News Widget Styles */
-.news-item {
-    padding: 10px 0;
-    border-bottom: 1px solid #eee;  /* Fixed: added # */
+    color: #333;
 }
 
 /* News Widget Styles */
@@ -107,6 +101,11 @@ body {
 
 .news-title:hover {
     color: #667eea;
+}
+
+.news-source {
+    font-size: 0.8rem;
+    color: #666;
 }
 
 /* Quote Widget Styles */
@@ -181,10 +180,18 @@ button:hover {
     font-size: 0.8rem;
 }
 
-.loading {
+.delete-btn:hover {
+    background: #ff3742;
+}
+
+.loading, .error {
     text-align: center;
     color: #999;
     font-style: italic;
+}
+
+.error {
+    color: #ff4757;
 }
 
 /* Responsive Design */
