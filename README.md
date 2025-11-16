@@ -31,5 +31,5 @@ A beautiful, responsive personal dashboard built with Flask that displays weathe
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/personal-dashboard.git
+   git clone https://github.com/ffallenangell7/YourPersonalDashboard.git
    cd personal-dashboard
